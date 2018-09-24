@@ -17,6 +17,8 @@
 			var angle:Number = Math.atan2(ty, tx);
 			angle *= 180 / Math.PI;
 			
+			
+			
 			rotation = angle + 90;
 			// rotate player sprite
 		}
