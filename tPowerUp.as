@@ -4,7 +4,7 @@
 	import flash.events.MouseEvent;
 	
 	
-	public class Snow extends MovieClip {
+	public class tPowerUp extends MovieClip {
 		
 		private var speed:Number;
 		/** If this is true, the object is queued up to be destroyed!! */
@@ -17,31 +17,28 @@
         var range:int = maxLimit - minLimit;
 		var myNum:Number = Math.ceil(Math.random()*range) + minLimit;
 		
-		public function Snow() {
+		public function tPowerUp() {
+			// constructor code
 			x = Math.random() * 550;
 			y = - 50;
 			speed = Math.random() * 3 + 2; // 2 to 5?
-			scaleX = Math.random() * .3 + .2; // .1 to .3
+			scaleX = 1; // .1 to .3
 			scaleY = scaleX;
-			radius *= scaleX;
-
+			
 			
 		}
+		
 		public function update():void {
 			// fall
-			y += speed + 1;
+			y += speed;
 			x += myNum;
 
-			if(y > 400){
+			if(y > 500){
 				isDead = true;
 			}
 		}
-		private function handleClick(e:MouseEvent):void {
-			isDead = true;
-		}
-		
-		
-		
+
 	}
 	
 }
+

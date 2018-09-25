@@ -3,7 +3,7 @@
 	import flash.display.MovieClip;
 	
 	
-	public class Bullet extends MovieClip {
+	public class TriShot extends MovieClip {
 
 		private const SPEED:Number = 10;
 		
@@ -15,11 +15,11 @@
 		
 		//var velocity:Point = new Point();
 		
-		public function Bullet(p:Player) {
+		public function TriShot(p:Player) {
 			x = p.x;
 			y = p.y;
 			
-			var angle:Number = (p.rotation - 90) * Math.PI / 180;
+			var angle:Number = (p.rotation - 80) * Math.PI / 180;
 			
 			velocityX = SPEED * Math.cos(angle);
 			velocityY = SPEED * Math.sin(angle);

@@ -3,7 +3,7 @@
 	import flash.display.MovieClip;
 	
 	
-	public class Bullet extends MovieClip {
+	public class FourShot extends MovieClip {
 
 		private const SPEED:Number = 10;
 		
@@ -15,7 +15,7 @@
 		
 		//var velocity:Point = new Point();
 		
-		public function Bullet(p:Player) {
+		public function FourShot(p:Player) {
 			x = p.x;
 			y = p.y;
 			
